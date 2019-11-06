@@ -5,26 +5,23 @@ body {
   font-size: 18px;
 }
 h1 {
-  margin-bottom: 0px;
   font-family: 'special elite';
 }
 h2 {
   font-family: 'special elite';
 }
 div h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+
 }
 .title {
   text-decoration: underline;
 }
 h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+
   font-family: 'special elite';
 }
 p {
-  margin-top: 0px;
+
 }
 .dialogue {
   text-align: left;

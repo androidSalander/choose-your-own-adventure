@@ -1,150 +1,123 @@
 let felix = document.querySelector("#felix")
 let joen = document.querySelector("#joen")
 
-let toggleHidden1 = function() {
-  felix.classList.toggle("hidden")
-  joen.classList.toggle("hidden")
-}
+let toggleHidden = function(id1, id2, id3, id4) {
+  id1.classList.toggle("hidden")
+  id2.classList.toggle("hidden")
+  id3.classList.toggle("hidden")
+  id4.classList.toggle("hidden")
+};
+
 
 let felixButton = document.querySelector("#felix-button");
 
-felixButton.addEventListener("click", toggleHidden1)
-
-let email = document.querySelector("#email")
-
-let goBack = function() {
-  joen.classList.toggle("hidden")
-  felix.classList.toggle("hidden")
-}
+felixButton.addEventListener("click", (event) => {
+  toggleHidden(felix, joen);
+})
 
 let joenBackButton = document.querySelector("#joen-back-button")
-
-joenBackButton.addEventListener("click", goBack)
-
-let toggleHidden2 = function() {
-  joen.classList.toggle("hidden")
-  email.classList.toggle("hidden")
-}
-
+let email = document.querySelector("#email")
 let joenButton = document.querySelector("#joen-button")
 
-joenButton.addEventListener("click", toggleHidden2)
+joenBackButton.addEventListener("click", (event) => {
+  toggleHidden(joen, felix)
+})
 
-let goBack2 = function() {
-  email.classList.toggle("hidden")
-  joen.classList.toggle("hidden")
-}
+joenButton.addEventListener("click", (event) => {
+  toggleHidden(joen, email)
+})
 
 let emailBackButton = document.querySelector("#email-back-button")
-
-emailBackButton.addEventListener("click", goBack2)
-
 let choiceCuffInstall = document.querySelector("#choice-cuff-install")
-
-let choicePrompt = function() {
-  email.classList.toggle("hidden")
-  choiceCuffInstall.classList.toggle("hidden")
-}
-
 let emailButton = document.querySelector("#email-button")
 
-emailButton.addEventListener("click", choicePrompt)
+emailBackButton.addEventListener("click", (event) => {
+  toggleHidden(email, joen)
+})
 
-let goBack3 = function() {
-  choiceCuffInstall.classList.toggle("hidden")
-  email.classList.toggle("hidden")
-}
+emailButton.addEventListener("click", (event) => {
+  toggleHidden(email, choiceCuffInstall)
+})
 
 let choiceCuffInstallBackButton = document.querySelector("#choice-cuff-install-back-button")
-
-choiceCuffInstallBackButton.addEventListener("click", goBack3)
-
 let cableFail = document.querySelector("#cable-fail")
-
-let playerChoose1 = function() {
-  choiceCuffInstall.classList.toggle("hidden")
-  cableFail.classList.toggle("hidden")
-}
-
 let cableRep = document.querySelector("#cable-rep")
 
-cableRep.addEventListener("click", playerChoose1)
+choiceCuffInstallBackButton.addEventListener("click", (event) => {
+  toggleHidden(choiceCuffInstall, email)
+})
 
-let goBack4 = function() {
-  cableFail.classList.toggle("hidden")
-  choiceCuffInstall.classList.toggle("hidden")
-}
+cableRep.addEventListener("click", (event) => {
+  toggleHidden(choiceCuffInstall, cableFail)
+})
 
 let cableFailBackButton = document.querySelector("#cable-fail-back-button")
 
-cableFailBackButton.addEventListener("click", goBack4)
+cableFailBackButton.addEventListener("click", (event) => {
+  toggleHidden(cableFail, choiceCuffInstall)
+})
 
 let fieldWork = document.querySelector("#field-work")
-
-let playerChoose2 = function() {
-  choiceCuffInstall.classList.toggle("hidden")
-  fieldWork.classList.toggle("hidden")
-}
-
 let fakeTeen = document.querySelector("#fake-teen")
 
-fakeTeen.addEventListener("click", playerChoose2)
-
-let goBack5 = function() {
-  fieldWork.classList.toggle("hidden")
-  choiceCuffInstall.classList.toggle("hidden")
-}
+fakeTeen.addEventListener("click", (event) => {
+  toggleHidden(choiceCuffInstall, fieldWork)
+})
 
 let fieldWorkBackButton = document.querySelector("#field-work-back-button")
-
-fieldWorkBackButton.addEventListener("click", goBack5)
-
 let chapter1 = document.querySelector("#chapter1")
 let chapter2 = document.querySelector("#chapter2")
 let blomkvist = document.querySelector("#blomkvist")
-
-let toggleHidden4 = function() {
-  chapter1.classList.toggle("hidden")
-  fieldWork.classList.toggle("hidden")
-  chapter2.classList.toggle("hidden")
-  blomkvist.classList.toggle("hidden")
-}
-
 let fieldWorkButton = document.querySelector("#field-work-button")
 
-fieldWorkButton.addEventListener("click", toggleHidden4)
+fieldWorkBackButton.addEventListener("click", (event) => {
+  toggleHidden(fieldWork, choiceCuffInstall)
+})
 
-let goBack6 = function() {
-  blomkvist.classList.toggle("hidden")
-  chapter2.classList.toggle("hidden")
-  fieldWork.classList.toggle("hidden")
-  chapter1.classList.toggle("hidden")
-}
+fieldWorkButton.addEventListener("click", (event) => {
+  toggleHidden(chapter1, fieldWork, chapter2, blomkvist)
+})
 
 let blomkvistBackButton = document.querySelector("#blomkvist-back-button")
-
-blomkvistBackButton.addEventListener("click", goBack6)
-
-let lunchWhere = document.querySelector("#lunch-where")
-
-let choicePrompt2 = function() {
-  blomkvist.classList.toggle("hidden")
-  lunchWhere.classList.toggle("hidden")
-}
-
+let choiceLunchWhere = document.querySelector("#choice-lunch-where")
 let blomkvistButton = document.querySelector("#blomkvist-button")
 
-blomkvistButton.addEventListener("click", choicePrompt2)
+blomkvistBackButton.addEventListener("click", (event) => {
+  toggleHidden(blomkvist, chapter2, fieldWork, chapter1)
+})
 
-let goBack7 = function() {
-  lunchWhere.classList.toggle("hidden")
-  blomkvist.classList.toggle("hidden")
-}
+blomkvistButton.addEventListener("click", (event) => {
+  toggleHidden(blomkvist, choiceLunchWhere)
+})
 
-let lunchWhereBackButton = document.querySelector("#lunch-where-back-button")
+let choiceLunchWhereBackButton = document.querySelector("#choice-lunch-where-back-button")
+let hitAndRun = document.querySelector("#hit-and-run")
+let newSpot = document.querySelector("#new-spot")
 
-lunchWhereBackButton.addEventListener("click", goBack7)
+choiceLunchWhereBackButton.addEventListener("click", (event) => {
+  toggleHidden(choiceLunchWhere, blomkvist)
+})
 
-let playerChoose3 = function() {
-  
-}
+newSpot.addEventListener("click", (event) => {
+  toggleHidden(choiceLunchWhere, hitAndRun)
+})
+
+let hitAndRunBackButton = document.querySelector("#hit-and-run-back-button")
+
+hitAndRunBackButton.addEventListener("click", (event) => {
+  toggleHidden(hitAndRun, choiceLunchWhere)
+})
+
+let lunch = document.querySelector("#lunch")
+let pickledHerring = document.querySelector("#pickled-herring")
+
+pickledHerring.addEventListener("click", (event) => {
+  toggleHidden(choiceLunchWhere, lunch)
+})
+
+let lunchBackButton = document.querySelector("#lunch-back-button")
+
+
+lunchBackButton.addEventListener("click", (event) => {
+  toggleHidden(lunch, choiceLunchWhere)
+})

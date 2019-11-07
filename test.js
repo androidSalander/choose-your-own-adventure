@@ -1,16 +1,14 @@
 let felix = document.querySelector("#felix")
 let joen = document.querySelector("#joen")
 
-class Navigator {
-  constructor(id) {
-    this.id = id
-  }
-  toggleHidden() {
-    this.id.classList.toggle("hidden")
-  }
-}
-new Navigator(felix)
+let toggleHidden = function(id1, id2) {
+  id1.classList.toggle("hidden")
+  id2.classList.toggle("hidden")
+};
+
 
 let felixButton = document.querySelector("#felix-button");
 
-felixButton.addEventListener("click", felix.toggleHidden)
+felixButton.addEventListener("click", (event) => {
+  toggleHidden(felix, joen);
+})

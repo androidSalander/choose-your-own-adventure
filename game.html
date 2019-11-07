@@ -73,7 +73,7 @@
         <button type="button" class="continue" id="email-button">Continue</button>
       </div>
       <div id="choice-cuff-install" class="hidden">
-        <h2 class="choose">Choose!</h2>
+        <h2>Choose!</h2>
         <p>Salander has to install the cuff on Westermarck's broadband cable so she can see what's on his personal computer, but she doesn't know where
           the cables in his house are located. How will she find out? Go back if you need to review your information.</p>
         <button type="button" class="back" id="choice-cuff-install-back-button">Back</button>
@@ -122,7 +122,7 @@
         <button type="button" class="continue" id="blomkvist-button">Continue</button>
       </div>
       <div id="choice-lunch-where" class="hidden">
-        <h2 class="choose">Choose!</h2>
+        <h2>Choose!</h2>
         <p>Where will Blomkvist and Salander have lunch? Go back if you need to review your information.</p>
         <button type="button" class="back" id="choice-lunch-where-back-button">Back</button>
         <p>Blomkvist's usual café near Berger's house, where they make his favorite pickled herring sandwiches.</p>
@@ -136,12 +136,12 @@
         <button type="button" class="back" id="hit-and-run-back-button">Back</button>
       </div>
       <div id="lunch" class="hidden">
-        <p>they get pickled herring sandwiches, salander explains the difficulty she's having investigating Westermarck. blomkvist suggests a stakeout. wait until monday and stake him out
-          at work or go to his house?</p>
+        <p>they get pickled herring sandwiches, salander explains the difficulty she's having investigating Westermarck. blomkvist suggests a stakeout.</p>
         <button type="button" class="back" id="lunch-back-button">Back</button>
         <button type="button" class="continue" id="lunch-button">Continue</button>
       </div>
       <div id="choice-when-stakeout" class="hidden">
+        <h2>Choose!</h2>
         <p>Today is Saturday, so Westermarck will be at home. When will you stake him out? Go back if you need to review your information.</p>
         <button type="button" class="back" id="choice-when-stakeout-back-button">Back</button>
         <p>Go to his house today. Who knows what nefarious business he might be up to?</p>
@@ -154,46 +154,87 @@
         <p>Try again on Sunday, or wait until Monday?</p>
         <button type="button" class="back" id="uneventful-back-button">Back</button>
         <button type="button" class="choice" id="sunday-stakeout">Sunday</button>
-        <button type="button" class="choice" id="monday-stakeout">Monday</button>
+        <button type="button" class="choice" id="monday-stakeout2">Monday</button>
       </div>
       <div id="shopping" class="hidden">
         <p>Westermarck takes his teenage daughter out for a day of shopping. Salander gets an ice cream and is repeatedly mistaken for a teenager and Blomkvist
         her father. He finds this exhausting, she finds it hilarious.</p>
         <button type="button" class="back" id="shopping-back-button">Back</button>
-        <button type="button" class="choice" id="monday-stakeout">Monday</button>
+        <button type="button" class="choice" id="monday-stakeout3">Monday</button>
       </div>
       <div id="stakeout" class="hidden">
-        <p>stakeout! after a fun weekend, they take blomkvist's car and go to Westermarck's house or job to stake him out. they sit and chat with their coffees. he comes out, gets in a cab,
-          and they follow him. He goes to a pretty average hotel. blomkvist or salander goes in after him and watches him check in. a very beautiful blonde woman
-          follows not 5 minutes later. she asks for them to ring the room Westermarck just checked in to. whoever went in goes to get the other from the car,
-          and they get their own room. salander hacks the hotel's files, remarking how easy it was. she finds the pseudonym Westermarck used to check in.
-          now she has something solid to go off of. she turns off the computer and jumps blomkvist.</p>
+        <p>stakeout! they take blomkvist's car and go to Westermarck's job to stake him out. they sit and chat with their coffees. he comes out, gets in a cab,
+          and they follow him. He goes to a pretty average hotel. blomkvist or salander goes in after him. </p>
           <button type="button" class="back" id="stakeout-back-button">Back</button>
           <button type="button" class="continue" id="stakeout-button">Continue</button>
       </div>
-      <div id="insomnia" class="hidden">
+      <div id="choice-hotel" class="hidden">
+        <h2>Choose!</h2>
+        <p>Who should follow Westermarck into the hotel? Go back if you need to review your information.</p>
+        <button type="button" class="back" id="choice-hotel-back-button">Back</button>
+        <p>Blomkvist, he's charming and unassuimg.</p>
+        <button type="button" class="choice" id="choose-blomkvist">Blomkvist</button>
+        <p>Salander, she's extremely observant and never forgets a face.</p>
+        <button type="button" class="choice" id="choose-salander">Salander</button>
+      </div>
+      <div id="blomkvist-hotel" class="hidden">
+        <p>Blomkvist waits a couple of minutes before entering the hotel. He mills about the checkout, acting like he's waiting for someone. after a few
+        minutes an exceptionally beautiful blonde woman walks to the front. she tells the front desk to call someone named Birgir. it takes a lot of
+        effort on his part not to gawk at the woman while she waits, but she doesn't seem to register his presence anyway. the clerk speaks to Birgir
+        and lets the woman go up to his room. Blomkvist paces for another couple of minutes before fetching Salander from the car. they get their own room.
+        salander hacks the hotel's files, remarking how easy it was. she finds the pseudonym Westermarck used to check in, Birgir Lundén.
+        now she has something solid to go off of. she turns off the computer and jumps blomkvist.</p>
+        <p>Salander wakes up in the middle of the night, excitable. blomkvist is fast asleep. She grabs her coat and cigarettes and heads outside. Out front
+        is the blonde woman, she has to be the same one blomkvist described. she smiles at salander. they have their cigarettes in peaceful silence. as the blonde
+        goes inside, she touches salander's shoulder and says "my name is Idun" before walking away.</p>
+        <p>back upstairs, salander finds Idun's page on an escort site onliine. they should definitely talk to her. she looks into Westermarck's alias,
+        a name that sounds oddly familiar to her, yet she cant place it. she could probably investigate this herself, but she wants to talk to Idun.
+        maybe she could ask her hacker collective for help. after a couple of hours hunting Lundén on the dark web, her eyes droop.
+        so she falls asleep next to blomkvist once again. when they wake up she tells blomkvist about what she found while he slept. </p>
+        <button type="button" class="back" id="blomkvist-hotel-back-button">Back</button>
+        <button type="button" class="continue" id="blomkvist-hotel-button">Continue</button>
+      </div>
+      <div id="salander-hotel" class="hidden">
+        <p>Basically the same as Blomkvist only the woman turns and smiles warmly and salander, who blushes and looks down at her shoes. she fetches blomkvist
+        from the car et cetera.</p>
         <p>Salander wakes up in the middle of the night, excitable. blomkvist is fast asleep. she powers up her laptop and looks into some online escort services
-          to see if she can find the woman Westermarck just hired. surprisingly, she is able to find her relatively quickly, under the name "Idun".
-          it's a long shot, but maybe this woman can help them. she looks into Westermarck's alias Birger Lundén, a name that sounds oddly familiar to her,
+          to see if she can find the woman Westermarck was just with. surprisingly, she is able to find her relatively quickly, on an escort site under the name "Idun".
+          it's a long shot, but maybe this woman can help them. she looks into Westermarck's alias, a name that sounds oddly familiar to her,
           yet she cant place it. she could probably investigate this herself, but she wants to talk to Idun. maybe she could ask her hacker collective for help.
           after a couple of hours hunting Lundén on the dark web, her eyes droop. so she falls asleep next to blomkvist once again. when they wake up she tells
-          blomkvist about what she found while he slept.
-          salander suggests they hire Idun and ask her to talk to them. blomkvist balks at her rates. you can either send Idun a request on her page
-          and ask plague to request info about Lundén, or have salander investigate him.</p>
-          <button type="button" class="back" id="insomnia-back-button">Back</button>
-          <button type="button" class="continue" id="insomnia-button">Continue</button>
+          blomkvist about what she found while he slept.</p>
+          <button type="button" class="back" id="salander-hotel-back-button">Back</button>
+          <button type="button" class="continue" id="salander-hotel-button">Continue</button>
+      </div>
+      <div id="choice-research" class="hidden">
+        <h2>Choose!</h2>
+        <p>salander suggests they hire Idun and ask her to talk to them. blomkvist balks at her rates. he suggests looking further into Westermarck's alias.</p>
+        <button type="button" class="back" id="choice-research-back-button">Back</button>
+        <p>Salander can ask Plague to request more info about Birgir Lundén from the hacker collective, giving them time to talk to Idun</p>
+        <button type="button" class="choice" id="meet-idun">Meet Idun</button>
+        <p>Salander can research Birgir Lundén herself.</p>
+        <button type="button" class="choice" id="research-birgir">Research</button>
+      </div>
+      <div id="research-alias" class="hidden">
+        <p>SURPRISE birgir lundén is buying weapons on the dark web, that was his connection to Felix Lunderström, and he buys a lot of nazi memorabilia.
+        that remiinds salander of why she recognized his alias, its a combination of the names of two leaders of the oldest swedish nazi parties. this alone
+        is grounds for his removal from his position, but it has to go deeper. next week she discovered a secret nazi meeting. since they still have time before
+        the meeting, she insists they still meet with Idun, Blomkvist agrees. you message her tuesday night and she agrees to meet the next afternoon.</p>
+        <button type="button" class="back" id="research-alias-back-button">Back</button>
+        <button type="button" class="continue" id="research-alias-button">Continue</button>
       </div>
       <div id="killing-time" class="hidden">
-        <p>if you decide to talk to idun, salander sends a message saying she wants to hire her for 2 hours just to talk, but they will still pay her rates.
-        idun replies quickly and happily agrees and in fact says they can pay her half if they're just talking, scheduling the meeting for tomorrow.
-        blomkvist's wallet is relieved. they have some time, so after some more ~celebratory fun~ in the hotel, the duo decides if they should take it easy,
-        or stake out Westermarck again. "take it easy" is basically sex and dinner. stakeout leads them to Westermarck having dinner with some guy,
+        <p>tuesday morning. salander sends a message to plague requesting info about Birgir Lundén for the usual payment. then she messages idun saying she wants to hire her
+        for 2 hours just to talk, but they will still pay her rates. idun replies quickly and happily agrees and in fact says they can pay her half if
+        they're just talking, scheduling the meeting for wednesday. blomkvist's wallet is relieved. they have some time, so after some more
+        ~celebratory fun~ in the hotel, the duo decides if they should take it easy, or stake out Westermarck again. "take it easy"
+        is basically sex and dinner. stakeout leads them to Westermarck having dinner with some guy,
         blomkvist thinks he looks familiar but can't quite place him. uneventful.</p>
         <button type="button" class="back" id="killing-time-back-button">Back</button>
         <button type="button" class="continue" id="killing-time-button">Continue</button>
       </div>
       <div id="idun" class="hidden">
-        <p>you meet idun at a cafe. she is absurdly beautiful with long, thick, wavy, golden hair like the goddess whos name she has chosen.
+        <p>you meet idun at a busy cafe. she is absurdly beautiful with long, thick, wavy, golden hair like the goddess whos name she has chosen.
           blomkvist is all but drooling, salander's eyes are much wider than usual. she does most of the talking. idun is as friendly and funny
           as she is beautiful. and smart too, she's actually an artist. she has been an escort for a few years and before that, a dancer.
           she's an artist's model for fun. blomkvist is surprised that salander is almost...chatty with her. she also tells them with a laugh like
@@ -221,31 +262,86 @@
         <h1>Chapter 3</h1>
         <h2>October 20</h2>
       </div>
-      <div id="meeting" class="hidden">
-        <p>theyve been doing a lot of research with their new information. plague sent a report from another hacker that showed Lundén bought a lot of Nazi
+      <div id="nazi-agenda" class="hidden">
+        <p>if you chose that option [plague sent a report from another hacker that showed Lundén bought a lot of Nazi
         paraphernelia online, as well as a lot of regular weapons. salander and blomkvist both remembered why Lundén's name and acquantaince were so familar.
         the name was compiled from 2 former nazi party leaders that salander had read about a long time ago. and blomkvist had written an article about
-        officials with nazi ties that Lundén's friend had appeared in. it was all making sense now. he surely had some nazi agenda, they just didn't know
+        officials with nazi ties that Lundén's friend had appeared in.] it was all making sense now. he surely had some nazi agenda, they just didn't know
         what it was. he had managed to do a very good job keeping it hidden. they were able to uncover the location of a meeting place, and a meeting
-        was being held tonight. they couldnt decide who should go. salander doesnt want to go because they hate women, and blomkvist because he's afraid
-        someone might recognize him from the magazine and call his bluff. if you choose blomkvist, he gets beat to death in an ally and salander vows to
-        kill everyone who was there with deadly poison. if you choose salander, she puts on her blonde wig and a conservative outfit. there are actually
+        was being held tonight.</p>
+        <button type="button" class="back" id="nazi-agenda-back-button">Back</button>
+        <button type="button" class="continue" id="nazi-agenda-button">Continue</button>
+      </div>
+      <div id="choice-meeting" class="hidden">
+        <h2>Choose!</h2>
+        <p>who should spy on the nazi meeting? salander doesnt want to go because they hate women, and blomkvist because he's afraid
+        someone might recognize him from the magazine and call his bluff.</p>
+        <button type="button" class="back" id="choice-meeting-back-button">Back</button>
+        <p>Salander convinces blomkvist to go</p>
+        <button type="button" class="choice" id="choose-meeting-blomkvist">Blomkvist</button>
+        <p>Blomkvist convinces salander to go</p>
+        <button type="button" class="choice" id="choose-meeting-salander">Salander</button>
+      </div>
+      <div id="meeting-blomkvist" class="hidden">
+        <p>someone recognizes blomkvist from millenium magazine and tells everyone theres a SPY here come to destroy them! they go too hard teaching him
+        a lesson and beat him up. when salander sees everyone leave and blomkvist doesnt return, she looks for him, and finds him dead in the ally.
+        she vows to kill everyone who was there with deadly poison.</p>
+        <button type="button" class="back" id="meeting-blomkvist-back-button">Back</button>
+      </div>
+      <div id="meeting-salander" class="hidden">
+        <p>she puts on her blonde wig and a conservative outfit. there are actually
         a couple of women there. security is very tight, but they wave salander through. theres a couple of government officials there but mostly seems
         like businessmen. they have a plot to "make sweden great again" starting with inciting a coup in Ghana, a former swedish colony, and taking over
         the government for sweden agian. they have members in key parts of government to keep slowly pushing policies more right wing. some of their ideas
         are almost laughably rediculous, but others are actually terrifying. salander makes it all the way through and meets blomkvist down the block.</p>
         <p>"Did you get it?" he asks.</p>
         <p>"Only one way to find out," she smiles.</p>
-        <button type="button" class="back" id="meeting-back-button">Back</button>
-        <button type="button" class="continue" id="meeting-button">Continue</button>
+        <button type="button" class="back" id="meeting-salander-back-button">Back</button>
+        <button type="button" class="continue" id="meeting-salander-button">Continue</button>
       </div>
       <div id="camera" class="hidden">
         <p>salander had a hidden camera in her bag for the entire meeting. they go over the footage in her apartment. there hasn't been a government scandle
-        like this in....remember to look up swedish govt scandals. now they have to decide what to do with the information. salander must always remain anonymous.
-        possible choices-take it to the president of the Administrative court along with the criminal dossier of Westermarck/Lundén, Millenium publishes the story,
-        take it to the police. ok, blomkvist takes it to the court president and he handles it and lets millenium publish the story. if millenium just publishes it,
-        idk it's bad they break a law or they cant use the info or something. if they take it to the police, it gets hushed up and blomkvist is taken out by a hitman.
-        salander goes on a vendetta to kill everyone involved with deadly poison. i think that's basically the end??</p>
+        like this in....remember to look up swedish govt scandals. now they have to decide what to do with the information.</p>
+        <button type="button" class="back" id="camera-back-button">Back</button>
+        <button type="button" class="continue" id="camera-button">Continue</button>
+      </div>
+      <div id="choice-ending" class="hidden">
+        <h2>Choose!</h2>
+        <p>What do you do with all the evidence? Salander will remain anonymous.</p>
+        <button type="button" class="back" id="choice-ending-back-button">Back</button>
+        <p>take it to the president of the administrative court</p>
+        <button type="button" class="choice" id="president">President</button>
+        <p>take it to the police</p>
+        <button type="button" class="choice" id="police">Police</button>
+        <p>take it to berger and publish the story with millenium</p>
+        <button type="button" class="choice" id="millenium">Millenium</button>
+      </div>
+      <div id="evidence-president" class="hidden">
+        <p>he is astounded. he says to please give him time to address the situation, and as soon as he can he will give you the okay to publish the entire
+        story as a reward for bringing this information to light</p>
+        <button type="button" class="back" id="evidence-president-back-button">Back</button>
+        <button type="button" class="continue" id="evidence-president-button">Continue</button>
+      </div>
+      <div id="evidence-police" class="hidden">
+        <p>the police say they will do everything they can, but when blomkvist calls back 2 weeks later to ask about progress they laugh at him.
+        he tells salander and she checks up on Westermarck, finding that his online profile is gone. basically, the police are in on it. another week
+        later, blomkvist is assassinated. salander vows to murder the culprits with deadly poison.</p>
+        <button type="button" class="back" id="evidence-police-back-button">Back</button>
+        <button type="button" class="continue" id="evidence-police-button">Continue</button>
+      </div>
+      <div id="evidence-millenium" class="hidden">
+        <p>Blomkvist gives berger all the evidence and tells her they have to publish. she hesitates, thinking it would be better to go through the police or
+        the court. but blomkvist says he doesn't trust anyone and the public must know the truth. its a wildly popular story but blomkvist ends up under
+        criminal investigation, and Westermarck flees the country as well as some other ppl from salander's video.</p>
+        <button type="button" class="back" id="evidence-millenium-back-button">Back</button>
+        <button type="button" class="continue" id="evidence-millenium-button">Continue</button>
+      </div>
+      <div id="the-end" class="hidden">
+        <p>CONGRATION! you finished the story! If you liked it, consider reading the Millenium Trilogy!</p>
+        <p>special thanks to Steig Larsson</p>
+        <button type="button" name="start">
+          <a href="index.html" target="_blank">Re-start the Game!</a>
+        </button>
       </div>
     </div>
   <script src="app.js"></script>

@@ -116,18 +116,13 @@ pickledHerring.addEventListener("click", (event) => {
 let lunchBackButton = document.querySelector("#lunch-back-button")
 let choiceWhenStakeout = document.querySelector("#choice-when-stakeout")
 let lunchButton = document.querySelector("#lunch-button")
-let theEnd = document.querySelector("#the-end")
 
 lunchBackButton.addEventListener("click", (event) => {
   toggleHidden(lunch, choiceLunchWhere)
 })
 
-/*lunchButton.addEventListener("click", (event) => {
-  toggleHidden(lunch, choiceWhenStakeout)
-})*/
-
 lunchButton.addEventListener("click", (event) => {
-  toggleHidden(lunch, theEnd)
+  toggleHidden(lunch, choiceWhenStakeout)
 })
 
 let choiceWhenStakeoutBackButton = document.querySelector("#choice-when-stakeout-back-button")
@@ -365,7 +360,7 @@ millenium.addEventListener("click", (event) => {
 })
 
 let evidencePresidentBackButton = document.querySelector("#evidence-president-back-button")
-//let theEnd = document.querySelector("#the-end")
+let theEnd = document.querySelector("#the-end")
 let evidencePresidentButton = document.querySelector("#evidence-president-button")
 let evidencePoliceBackButton = document.querySelector("#evidence-police-back-button")
 let evidencePoliceButton = document.querySelector("#evidence-police-button")

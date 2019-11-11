@@ -365,7 +365,7 @@ millenium.addEventListener("click", (event) => {
 })
 
 let evidencePresidentBackButton = document.querySelector("#evidence-president-back-button")
-//let theEnd = document.querySelector("#the-end")
+let theEnd = document.querySelector("#the-end")
 let evidencePresidentButton = document.querySelector("#evidence-president-button")
 let evidencePoliceBackButton = document.querySelector("#evidence-police-back-button")
 let evidencePoliceButton = document.querySelector("#evidence-police-button")

@@ -3,6 +3,7 @@ body {
   color: white;
   font-family: 'saira';
   font-size: 18px;
+  margin: 20px;
 }
 h1 {
   font-family: 'special elite';
@@ -10,18 +11,11 @@ h1 {
 h2 {
   font-family: 'special elite';
 }
-div h2 {
-
-}
 .title {
   text-decoration: underline;
 }
 h3 {
-
   font-family: 'special elite';
-}
-p {
-
 }
 .dialogue {
   text-align: left;
@@ -33,4 +27,5 @@ button {
   font-size: 1.5rem;
   font-family: 'special elite';
   padding: 5px;
+  filter: drop-shadow(5px 5px 2px rgba(169, 169, 169, 0.5));
 }
